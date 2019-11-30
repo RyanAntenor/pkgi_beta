@@ -36,9 +36,9 @@ require_once ROOT . '/config/view.php';
 
 
 
-// $transport = (new \Swift_SmtpTransport('mail.westbesthome.com', 2525))
-// ->setUsername('contact@westbesthome.com')
-// ->setPassword('yUsDn3nqZvfW')
+// $transport = (new \Swift_SmtpTransport('', 25))
+// ->setUsername('')
+// ->setPassword('')
 // ;
 
 // // Create the Mailer using your created Transport
@@ -46,8 +46,8 @@ require_once ROOT . '/config/view.php';
 
 // // Create a message
 // $message = (new Swift_Message('Test Subject'))
-// ->setFrom(['contact@westbesthome.com' => 'John Doe'])
-// ->setTo(['ryan.antenor@gmail.com'])
+// ->setFrom(['johndoe@email.com'])
+// ->setTo(['johnedoe@email.com'])
 // ->setBody('This is a test message')
 // ;
 
