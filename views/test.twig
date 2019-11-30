@@ -1,0 +1,6 @@
+<h1> Test Page </h1>
+
+{% for photo in photos %}
+    {# {{ photo.id }} - {{ photo.user }} #}
+    {{ photo.category.name }}
+{% endfor %}

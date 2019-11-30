@@ -1,0 +1,30 @@
+{% extends "layout/login.twig" %}
+
+{% block specific_css %}
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+{% endblock %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            {% if message %}
+                <br >
+                <p class="text-center text-warning"> {{ message }}</p>
+                <register></register>
+            {% else %}
+                <register></register>
+            {% endif %}
+            
+            
+        </div>
+    </div>
+    
+{% endblock %}
+
+
+{% block specific_js %} 
+
+{% endblock %}

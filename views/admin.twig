@@ -1,0 +1,50 @@
+{% extends "layout/dashboard.twig" %}
+
+{% block specific_css %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chocolat/0.4.21/css/chocolat.min.css">
+{% endblock %} 
+
+
+
+{% block content %}
+    <section class="section">
+        <div class="section-header">
+            <h1>Dashboard</h1>
+            <div class="section-header-breadcrumb">
+              <div class="breadcrumb-item active"><a href="/admin">Dashboard</a></div>
+            </div>
+        </div>
+        <div class="section-body">
+
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="hero bg-primary text-white">
+                        <div class="hero-inner">
+                            <h2>Welcome, {{ username }}!</h2>
+                            <p class="lead">You almost arrived, complete the information about your account to complete registration.</p>
+                            <div class="mt-4">
+                                <a href="/dashboard/profile" class="btn btn-outline-white btn-lg btn-icon icon-left"><i class="far fa-user"></i> Complete My Account</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {# <div class="col-12 mb-4">
+                    <div class="hero bg-primary text-white">
+                    <div class="hero-inner">
+                        <h2>Welcome Back, {{ username }}!</h2>
+                        <p class="lead">This page will be updated with stats, finished project and more.</p>
+                    </div>
+                    </div>
+                </div> #}
+            </div>
+           
+        </div>
+    
+    </section>
+
+{% endblock %}
+
+{% block specific_js %} 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chocolat/0.4.21/js/jquery.chocolat.min.js"></script>
+{% endblock %}

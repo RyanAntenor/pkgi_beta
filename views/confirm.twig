@@ -1,0 +1,59 @@
+{% extends "layout/login.twig" %}
+
+{% block specific_css %}
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+{% endblock %}
+
+
+{% block content %}
+    {# <section class="section">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-5 offset-md-3 ">
+                    <div class="card">
+                        <div class="card-hearder">
+                            <h1>Your registration is complete!</h1>
+                        </div>
+                        <div class="card-body">
+                            <a href="">
+                                <button class="btn btn-success"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section> #}
+
+    <section class="section">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h3 class="">Your registration is now complete!</h3>
+                                
+                            </div>
+                            <div class="card-body">
+                                <a href="/dashboard">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block">
+                                        Enter Phikigai
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+{% endblock %}
+
+
+{% block specific_js %} 
+
+{% endblock %}

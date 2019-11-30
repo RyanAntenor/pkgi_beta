@@ -1,0 +1,55 @@
+{% extends "layout/dashboard.twig" %}
+
+{% block specific_css %}
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+{% endblock %}
+
+
+{% block content %}
+<section class="section">
+    <div class="section-header">
+        <h1>Search</h1>
+    </div>
+<div class="section-body">
+
+    <div class="row">
+        <div class="col-4">
+                <form class="">
+                    <div class="form-group">
+                        <label>Search</label>
+                        <input autofocus="true" type="search" class="form-control">
+                    </div>
+                </form>
+        </div>
+    </div>
+   
+
+    <div class="row">
+    
+        <div class="col-4">
+            {% for user in users %}
+                {# {{ user.firstname }} #}
+                <user-profile 
+                    user="{{ user }}"
+                    firstname="{{ user.firstname }}" 
+                    lastname="{{ user.lastname }}"
+                    categories="{{ user.categories }}"
+                >
+                </user-profile>
+
+            {% endfor %}
+           
+        </div>
+    
+    </div>
+</div>
+</section>
+
+
+{% endblock %}
+
+
+{% block specific_js %} 
+
+{% endblock %}

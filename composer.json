@@ -1,0 +1,26 @@
+{
+    "name": "ryanantenor/microframeworkv3",
+    "authors": [{
+        "name": "Ryan Antenor",
+        "email": "contact@ryanantenor.be"
+    }],
+    "require": {
+        "illuminate/database": "^5.8",
+        "pecee/simple-router": "4.2.0.6",
+        "league/plates": "^3.3",
+        "swiftmailer/swiftmailer": "^6.0",
+        "voku/html-min": "^4.0",
+        "twig/twig": "^2.0",
+        "vlucas/phpdotenv": "^3.6",
+        "nesbot/carbon": "^2.25"
+    },
+
+    "autoload": {
+        "classmap": [
+            "models/", "app/"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
