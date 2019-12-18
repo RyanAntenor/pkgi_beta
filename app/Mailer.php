@@ -65,9 +65,9 @@ class Mail {
 
 // $mail = new Mail();
 // $mail->subject = "Ryan test mail";
-// $mail->from = ['contact@westbesthome.com' => 'John Doe'];
-// $mail->to = ['ryan.antenor@gmail.com'];
-// $mail->body = 'This is a test message again with dynamic var';
+// $mail->from = ['johndoe@email.com' => 'John Doe'];
+// $mail->to = ['janedoe@email.com'];
+// $mail->body = 'This is a test message';
 
 
 // echo $mail->send();
