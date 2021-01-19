@@ -5,7 +5,7 @@
         "email": "contact@ryanantenor.be"
     }],
     "require": {
-        "illuminate/database": "^5.8",
+        "illuminate/database": "^6.20",
         "pecee/simple-router": "4.2.0.6",
         "league/plates": "^3.3",
         "swiftmailer/swiftmailer": "^6.0",
